@@ -1,4 +1,5 @@
-package com.nekisse.webservice.domain;
+package com.coduckfoilo.domain.project;
+
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
@@ -12,11 +13,11 @@ import java.time.LocalDateTime;
 @Getter
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-public abstract class BaseTiemEntity {
+public abstract class BaseTimeEntity {
 
     @CreatedDate
-    private LocalDateTime createdDate;
+    private LocalDateTime startDate;
 
     @LastModifiedDate
-    private LocalDateTime modifiedDate;
+    private LocalDateTime endDate;
 }

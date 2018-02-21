@@ -2,43 +2,45 @@
 <html>
 <head>
     <title>스프링부트 웹서비스</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!--부트스트랩 css 추가-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="/css/lib/bootstrap.min.css">
 </head>
 <body>
-<h1>스프링부트로 시작하는 웹 서비스</h1>
+<h1>스프링부트 포트폴리오</h1>
+
 <div class="col-md-12">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
-    <br/>
-    <br/>
-    <!-- 목록 출력 영역 -->
+
+
+    </br>
+    </br>
+<#--목록 출력 영역-->
     <table class="table table-horizontal table-bordered">
         <thead class="thead-strong">
         <tr>
-            <th>게시글번호</th>
+            <th>게시글 번호</th>
             <th>제목</th>
             <th>작성자</th>
-            <th>최종수정일</th>
+            <th>최종 수정일</th>
         </tr>
         </thead>
         <tbody id="tbody">
-        {{#each posts}}
-            <tr>
-                <td>{{id}}</td>
-                <td>{{title}}</td>
-                <td>{{author}}</td>
-                <td>{{modifiedDate}}</td>
-            </tr>
-        {{/each}}
+        <#list projects as item>
+        <tr>
+            <th>${item.id}</th>
+            <th>${item.title}</th>
+            <th>${item.userId}</th>
+            <th>${item.endDate}</th>
+        </tr>
+        </#list>
         </tbody>
     </table>
 </div>
 
-<!-- Modal 영역 -->
-<div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
+<#--Modal영역-->
+<div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel"
+     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -54,12 +56,12 @@
                         <input type="text" class="form-control" id="title" placeholder="제목을 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="author"> 작성자 </label>
-                        <input type="text" class="form-control" id="author" placeholder="작성자를 입력하세요">
+                        <label for="userId"> 작성자 </label>
+                        <input type="text" class="form-control" id="userId" placeholder="작성자를 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="content"> 내용 </label>
-                        <textarea class="form-control" id="content" placeholder="내용을 입력하세요"></textarea>
+                        <label for="description"> 내용 </label>
+                        <textarea class="form-control" id="description" placeholder="내용을 입력하세요"></textarea>
                     </div>
                 </form>
             </div>
@@ -75,7 +77,7 @@
 <script src="/js/lib/jquery.min.js"></script>
 <script src="/js/lib/bootstrap.min.js"></script>
 
-<!--custom js 추가-->
+<#--custom js 추가-->
 <script src="/js/app/main.js"></script>
 
 </body>
