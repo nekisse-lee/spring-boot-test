@@ -1,4 +1,4 @@
-package com.coduckfoilo.domain.project;
+package com.coduckfoilo.domain.project.domain;
 
 
 import lombok.Getter;

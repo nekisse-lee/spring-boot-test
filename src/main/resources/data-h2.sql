@@ -1,2 +1,2 @@
-insert into project (user_Id, title, description, start_Date, end_Date) values (1, '제목1', '내용1', now(), now());
-insert into project (user_Id, title, description, start_Date, end_Date) values (2, '제목2', '내용2', now(), now());
+-- insert into project (user_Id, title, description, start_Date, end_Date) values (1, '제목1', '내용1', now(), now());
+-- insert into project (user_Id, title, description, start_Date, end_Date) values (2, '제목2', '내용2', now(), now());

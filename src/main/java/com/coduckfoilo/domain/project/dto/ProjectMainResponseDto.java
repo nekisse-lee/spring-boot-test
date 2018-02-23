@@ -1,6 +1,6 @@
 package com.coduckfoilo.domain.project.dto;
 
-import com.coduckfoilo.domain.project.Project;
+import com.coduckfoilo.domain.project.domain.Project;
 import lombok.Getter;
 
 import java.time.LocalDateTime;

@@ -1,5 +1,7 @@
 package com.coduckfoilo.domain.project;
 
+import com.coduckfoilo.domain.project.domain.Project;
+import com.coduckfoilo.domain.project.domain.ProjectRepository;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;

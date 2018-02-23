@@ -12,7 +12,6 @@
 <div class="col-md-12">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
 
-
     </br>
     </br>
 <#--목록 출력 영역-->
@@ -32,6 +31,7 @@
             <th>${item.title}</th>
             <th>${item.userId}</th>
             <th>${item.endDate}</th>
+            <td><a href="/users/${item.id}/form" class="btn btn-success" role="button">수정</a></td>
         </tr>
         </#list>
         </tbody>
