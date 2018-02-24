@@ -9,9 +9,10 @@
    <div class="col-md-10 col-md-offset-1">
       <div class="panel panel-default">
           <table class="table table-hover">
+              <h1>회원 리스트!!!!!!!!!!!!!!!!!ㄴㅇㄹㄴㅇㄹ!!!!!!!!</h1>
               <thead>
                 <tr>
-                    <th>#</th> <th>사용자 아이디</th> <th>이름</th> <th>내</th><th></th>
+                    <th>#</th> <th>사용자 아이디</th> <th>이름</th> <th>내용</th><th></th>
                 </tr>
 
               </thead>

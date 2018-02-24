@@ -15,3 +15,12 @@
 #  h2:
 #    console:
 #      enabled: true
+
+
+
+spring:
+  devtools:
+    livereload:
+      enabled: true
+freemarker:
+  cache: false

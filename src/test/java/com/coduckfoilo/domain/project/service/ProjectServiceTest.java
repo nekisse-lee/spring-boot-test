@@ -37,7 +37,7 @@ public class ProjectServiceTest {
                 .build();
 
         //when
-        projectService.save(dto);
+//        projectService.save(dto);
 
         //then
         Project project = projectRepository.findAll().get(0);

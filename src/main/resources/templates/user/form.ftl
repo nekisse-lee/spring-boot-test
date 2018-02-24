@@ -21,7 +21,7 @@
                   <input class="form-control" id="description" name="description" placeholder="내용">
               </div>
 
-              <button type="submit" class="btn btn-success clearfix pull-right">글 등록</button>
+              <button type="submit" class="btn btn-success clearfix pull-right">회원가입</button>
               <div class="clearfix" />
           </form>
         </div>
