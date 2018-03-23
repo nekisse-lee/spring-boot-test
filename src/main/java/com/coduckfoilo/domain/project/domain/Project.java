@@ -50,4 +50,10 @@ public class Project  extends BaseTimeEntity{
                 ", description='" + description + '\'' +
                 '}';
     }
+
+    public void update(Project updateProject) {
+        this.userId = updateProject.id;
+        this.title = updateProject.title;
+        this.title = updateProject.description;
+    }
 }

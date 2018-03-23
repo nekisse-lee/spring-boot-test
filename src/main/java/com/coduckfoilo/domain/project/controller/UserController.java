@@ -48,4 +48,17 @@ public class UserController {
         return "/user/updateForm";
     }
 
+    @PostMapping("{id}")
+    public String update(@PathVariable Long id, Project updateProject) {
+        Project project = projectRepository.findOne(id);
+        project.update(updateProject);
+        projectRepository.save(project);
+        return "redirect:/users";
+    }
+
+    @GetMapping("/delete/{id}")
+    public String delete(@PathVariable Long id) {
+        projectRepository.delete(id);
+        return "redirect:/users";
+    }
 }

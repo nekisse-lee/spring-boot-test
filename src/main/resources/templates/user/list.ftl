@@ -24,6 +24,7 @@
                     <td>${item.title}</td>
                     <td>${item.description}</td>
                     <td><a href="/users/${item.id}/form" class="btn btn-success" role="button">수정</a></td>
+                    <td><a href="/users/delete/${item.id}" class="btn btn-success" role="button">글삭제</a></td>
                 </tr>
                 <!--<tr>-->
                     <!--<th scope="row">2</th> <td>slipp</td> <td>슬립</td> <td>slipp@sample.net</td><td><a href="#" class="btn btn-success" role="button">수정</a></td>-->
@@ -31,6 +32,7 @@
 
               </tbody>
           </#list>
+              <td><a href="/users/form" class="btn btn-success" role="button">글등록</a></td>
           </table>
         </div>
     </div>

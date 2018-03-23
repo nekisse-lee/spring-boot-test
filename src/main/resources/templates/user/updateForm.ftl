@@ -7,7 +7,7 @@
 <div class="container" id="main">
     <div class="col-md-6 col-md-offset-3">
         <div class="panel panel-default content-main">
-            <form name="question" method="post" action="/users">
+            <form name="question" method="post" action="/users/${user.id}">
                 <h1>회원 정보 변경 페이지 </h1>
                 <div class="form-group">
                     <label for="userId">사용자 아이디 숫자</label>
@@ -27,6 +27,9 @@
                 <button type="submit" class="btn btn-success clearfix pull-right">글 등록</button>
                 <div class="clearfix"/>
             </form>
+            <#--<form method="get" action="/users/delete/${user.id}">-->
+             <#--<button type="submit" class="btn btn-success clearfix pull-right">글 삭제</button>-->
+            <#--</form>-->
         </div>
     </div>
 </div>
